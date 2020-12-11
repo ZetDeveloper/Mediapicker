@@ -15,8 +15,16 @@
 
 [apk]: https://github.com/ZetDeveloper/Mediapicker/blob/main/YFTC%20-%20DCJR.apk
 
+# Requerimientos
 
-#Arquitectura
+* Android Studio: 4.1.1
+* compileSdkVersion: 29
+* minSdkVersion 23
+* Se configuraron los favors
+
+
+
+# Arquitectura
 
 ![alt text](https://i.ibb.co/4ZC9GKK/Captura.png)
 
