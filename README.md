@@ -14,3 +14,14 @@
 [linkDesign]: https://app.zeplin.io/project/5fc1ac1671b556055c1c3a36/screen/5fc1ac6ec45307bcccfda2d1
 
 [apk]: https://github.com/ZetDeveloper/Mediapicker/blob/main/YFTC%20-%20DCJR.apk
+
+
+#Arquitectura
+
+![alt text](https://raw.githubusercontent.com/ZetDeveloper/Mediapicker/main/Captura.PNG?token=ADBP4CCO75UD7KAX5VBUIUC72MVTG)
+
+ * La vista contiene in view model(LiveData) que enviar ordenes para obtener los archivos
+ * El view model consulta a la dependencia de casos de uso
+ * El caso de uso consulta al repositorio que a su vez consulta a un util para hacer querys a os archivos.
+ * Cuando el usecase devuelve respuesta el se hace un post del valos de los archivos para que el live data haga render de los item en el recycler view
+ * Query usa un ContentResolver y cursores para obtener los archivos
