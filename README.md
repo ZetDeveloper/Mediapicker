@@ -18,7 +18,7 @@
 
 #Arquitectura
 
-![alt text](https://raw.githubusercontent.com/ZetDeveloper/Mediapicker/main/Captura.PNG?token=ADBP4CCO75UD7KAX5VBUIUC72MVTG)
+![alt text](https://i.ibb.co/4ZC9GKK/Captura.png)
 
  * La vista contiene in view model(LiveData) que enviar ordenes para obtener los archivos
  * El view model consulta a la dependencia de casos de uso
