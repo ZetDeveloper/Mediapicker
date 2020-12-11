@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/btnImages"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/fotos"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:text="@string/imagen_label"
+                    android:textSize="9.6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:clickable="true"
+            android:id="@+id/btnVideos"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/video"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:text="@string/videos_label"
+                    android:textSize="9.6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btnMusic"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/musica"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:text="@string/musica_label"
+                    android:textSize="9.6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btnOthers"
+            android:orientation="horizontal"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_centerInParent="true"
+                android:layout_marginTop="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/otros"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_marginTop="13dp"
+                    android:text="@string/otros_label"
+                    android:id="@+id/txtLocation"
+                    android:textSize="9.6sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/design_default_color_on_primary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <include layout="@layout/menu_layout"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+
+<com.google.android.material.appbar.AppBarLayout
+    app:elevation="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/collapsing_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:fitsSystemWindows="true"
+        app:contentScrim="?attr/colorPrimary"
+        app:expandedTitleMarginStart="48dp"
+        app:expandedTitleMarginEnd="64dp">
+        <include  layout="@layout/profile_layout"/>
+        <androidx.appcompat.widget.Toolbar
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:elevation="0dp"
+            android:elevation="0dp"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetStart="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:contentInsetRight="0dp"
+            android:contentInsetEnd="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+                <ImageView
+                    android:layout_marginTop="37.4dp"
+                    android:layout_marginStart="19.2dp"
+                    android:src="@drawable/ionicons_svg_ios_arrow_back"
+                    android:id="@+id/btnBack"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="37.4dp"
+                    android:layout_marginEnd="19.2dp"
+                    android:src="@drawable/more_vertical"
+                    android:id="@+id/btnMenu"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/txtTitle"
+                    android:textStyle="bold"
+                    android:textSize="15.4sp"
+                    android:layout_marginTop="37.4dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

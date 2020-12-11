@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Media picker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="musica_label">MUSIC</string>
+    <string name="videos_label">VIDEOS</string>
+    <string name="imagen_label">PHOTOS</string>
+    <string name="otros_label">OTHERS</string>
+</resources>
